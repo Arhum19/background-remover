@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <div class="animated-bg"></div>
     <div class="container">
       <header>
         <div class="logo">
@@ -23,48 +24,57 @@
         <div class="hero-section">
           <h1>AI-Powered Background Remover</h1>
           <p class="subtitle">
-            Remove backgrounds from images instantly with our advanced AI
-            technology
+            Upload your image and let AI do the magic in seconds ✨
           </p>
         </div>
 
-        <div class="upload-container">
+        <!-- Upload Section -->
+        <div class="upload-container glass">
           <div class="drop-zone" id="dropZone">
-            <p>Drag & Drop your image here or</p>
+            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+            <p>Drag & Drop your image here</p>
+            <span>or</span>
             <button id="selectButton">Select File</button>
             <input type="file" id="fileInput" accept="image/*" />
           </div>
         </div>
 
-        <div class="preview-container">
-          <div class="image-preview">
+        <!-- Preview -->
+        <div class="preview-container glass">
+          <h2 class="preview-title">Preview</h2>
+          <div class="image-compare" id="compareContainer" hidden>
             <div class="original">
-              <h3>Original Image</h3>
-              <img id="originalImage" src="" alt="Original" hidden />
+              <img id="originalImage" src="" alt="Original" />
             </div>
             <div class="processed">
-              <h3>Processed Image</h3>
-              <img id="processedImage" src="" alt="Processed" hidden />
+              <img id="processedImage" src="" alt="Processed" />
             </div>
+            <div class="slider" id="slider"></div>
           </div>
+
           <div class="controls">
-            <button id="removeBackground" disabled>Remove Background</button>
-            <button id="download" disabled>Download Result</button>
+            <button id="removeBackground" disabled>
+              <i class="fas fa-magic"></i> Remove Background
+            </button>
+            <button id="download" disabled>
+              <i class="fas fa-download"></i> Download
+            </button>
           </div>
         </div>
 
+        <!-- Features -->
         <div class="features">
-          <div class="feature-card">
+          <div class="feature-card glass">
             <i class="fas fa-bolt"></i>
             <h3>Lightning Fast</h3>
             <p>Process images in seconds</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card glass">
             <i class="fas fa-robot"></i>
             <h3>AI Powered</h3>
             <p>Advanced machine learning</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card glass">
             <i class="fas fa-shield-alt"></i>
             <h3>Secure</h3>
             <p>Your data stays private</p>
@@ -89,9 +99,9 @@
           <div class="footer-section">
             <h4>Connect</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/muhammad-arhum-bin-abid-69379b301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"
+                ><i class="fab fa-linkedin" style="color: aliceblue;"></i></a>
+              <a href="https://github.com/Arhum19"><i class="fab fa-github" style="color: white;"></i></a>
             </div>
           </div>
         </div>
