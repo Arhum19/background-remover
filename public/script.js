@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           method: "POST",
           headers: {
-            "API-KEY": "98919cff67b34f419fde2025b25802d7",
+            "API-KEY": "d99866261d7f4e5abc21dba687582b78",
           },
           body: formdata,
         }
